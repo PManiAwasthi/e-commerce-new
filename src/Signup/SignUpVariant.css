@@ -1,0 +1,94 @@
+.inputForm {
+  align-content: flex-start;
+  display: grid;
+  grid-template-rows: repeat(4, 0.3fr);
+}
+.title {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 20px;
+  align-self: center;
+  margin-right: 190px;
+  cursor: context-menu;
+  border-bottom: 3px solid #444;
+}
+
+.inputData {
+  outline: none;
+  border-width: 0px;
+  padding: 4px 2px;
+  background-color: #add8e6;
+  border-radius: 3px;
+  width: 70%;
+}
+.heading {
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: context-menu;
+  margin-bottom: 5px;
+}
+.inputComponent {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.passwordForget {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #3a81f1;
+  position: relative;
+  margin-left: 150px;
+  cursor: context-menu;
+}
+.loginButton {
+  background-color: #3a81f1;
+  outline: none;
+  border-width: 0px;
+  border-radius: 4px;
+  width: 150px;
+  margin-top: 40px;
+  height: 25%;
+  padding: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.divContainer {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.otheroptions {
+  border: top 2px;
+  border-color: black;
+  display: grid;
+  align-content: center;
+}
+
+.social-icon {
+  align-self: center;
+}
+.otheroptions {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.signUP {
+  align-self: center;
+  margin-top: 20px;
+  font-size: 0.5em;
+  font-weight: 600;
+
+  cursor: context-menu;
+}
+
+.signUpText {
+  color: #3a81f1;
+}
+.signUpText:hover {
+  border-bottom: 2px solid #3a81f1;
+  font-weight: 700;
+}

@@ -1,0 +1,71 @@
+.profilecontainer {
+  display: grid;
+  height: 90vh;
+  background-image: linear-gradient(#a1c4fd, #c2e9fb);
+}
+.input_heading {
+  color: #777;
+}
+.btn:hover {
+  color: #065df3;
+  background-color: #4d84e2;
+}
+
+.profileCard {
+  display: flex;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-top:16px;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: box-shadow 83ms;
+  position: relative;
+  border: none;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 15%), 0 0 0 rgb(0 0 0 / 20%);
+}
+
+
+
+
+
+.makeStyles-root-1 {
+  padding: 0px;
+}
+
+.btn {
+  width: 150;
+  height: 48px;
+  border: none;
+  outline: none;
+  border-radius: 49px;
+  cursor: pointer;
+  background-color: #5995fd;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px;
+  transition: 0.5s;
+}
+.btninputs {
+  display: flex;
+  margin: 8px;
+  width: 80%;
+}
+
+span.spanUser{
+  padding-left: 3px;
+  padding-right: 3px;
+  color:black;
+}
+span.spanHeading:hover{
+  background-color: #f9f1f1;
+  border-bottom: 1px solid black;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .grid-container{
+    direction: column;
+  }
+}

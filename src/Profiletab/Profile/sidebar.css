@@ -1,0 +1,41 @@
+.sidebarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: 100%;
+}
+.totest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: burlywood;
+  height: 100vh;
+  width: 100vh;
+}
+.sidebarheading {
+  border-bottom: 2px solid black;
+  cursor: context-menu;
+  padding: 5px 10px;
+}
+
+.sidebarelementsoptions {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 30px;
+  cursor: context-menu;
+}
+.elementheading > span {
+  padding-left: 5px;
+  cursor: context-menu;
+  font-weight: 600;
+}
+.elementheading:hover {
+  background-color: cornsilk;
+  border-bottom: 2px solid black;
+}
+.elementarrow {
+  cursor: context-menu;
+  font-weight: 600;
+}
