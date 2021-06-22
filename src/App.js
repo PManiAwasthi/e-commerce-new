@@ -28,9 +28,8 @@ import ProductDetails from './pages/ProductDetails/productDetails'
 import Cart from "./pages/Cart/cart";
 import Payment from "./pages/Payment/payment";
 import Order from "./pages/OrderDetails/order";
-import Profile from "./Profiletab/Profile/Profiletab";
 import Profiletab from "./Profiletab/Profile/Profiletab";
-import Wishlist from "./Profiletab/Wishlist/Wishlist";
+import Wishlist from "./pages/Wishlist/wishlist";
 
 
 
@@ -58,9 +57,7 @@ const App = props =>{
           </WithAuth>
         )}/>
         <Route exact path="/wishlist" render = {() =>(
-          <WithAuth>
-          <Wishlist/>
-        </WithAuth>
+            <MainLayout><Wishlist/></MainLayout>
         )}/>
          <Route exact path="/registration" render={()=>(
           <Registration/>

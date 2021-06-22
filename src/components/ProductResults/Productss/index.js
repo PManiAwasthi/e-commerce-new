@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from'react-router-dom'
 import {useDispatch} from'react-redux'
 import {addProduct} from'./../../../Redux/Cart/cart.actions'
+import {addProductWishlist} from './../../../Redux/Wishlist/wishlist.actions'
 import "../products.scss"
 
 
@@ -26,6 +27,13 @@ const Product = (product)=>{
             );
             // history.push('/cart')
     }
+    const handleAddToWishlist =(product)=>{
+        if(!product) return;
+
+        dispatch(
+            addProductWishlist(product)
+            );
+    }
     return(
         <div className="wrapper">
         <div className="card" >
@@ -38,6 +46,9 @@ const Product = (product)=>{
                 <p className="card_desc" dangerouslySetInnerHTML={{__html:productDesc}}></p>
                 <button  className="card__button"onClick ={()=> handleAddtoCart(product)}>
                     Add to Cart
+                </button>
+                <button  className="card__button"onClick ={()=> handleAddToWishlist(product)}>
+                    Add to wishlist
                 </button>
             </div>
 

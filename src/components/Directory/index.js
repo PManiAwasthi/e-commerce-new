@@ -1,7 +1,8 @@
 import React from"react"
 import "./style.scss"
-import MenImage from"./../../Assets/shopMens.jpg"
-import WomenImage from"./../../Assets/shopWomens.jpg"
+import WoodArt from "./../../Assets/woodArtHome.jpg"
+import BellMetal from "./../../Assets/BellMetalImageHome.jpg"
+import WroughtIron from "./../../Assets/wroughtIronHome.jpg"
 
 
 const Directory = props =>{
@@ -11,16 +12,23 @@ const Directory = props =>{
             <div 
             className ="item"
             style={{
-                backgroundImage:`url(${WomenImage})`
+                backgroundImage:`url(${BellMetal})`
             }}>
-                <a href="/">Shop Womens</a>
+                <a href="/">BellMetal art</a>
             </div>
                 <div 
               className ="item"
               style={{
-                backgroundImage:`url(${MenImage})`
+                backgroundImage:`url(${WroughtIron})`
             }}>
-                <a href="/">Shop Mens</a>
+                <a href="/">Wrought Iron Art</a>
+                </div>
+                <div 
+              className ="item"
+              style={{
+                backgroundImage:`url(${WoodArt})`
+            }}>
+                <a href="/">Wood Art</a>
                 </div>
         </div>
 

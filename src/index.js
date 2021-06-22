@@ -15,7 +15,8 @@ ReactDOM.render(
      </PersistGate>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
+  document.getElementById('rootwishlist')
 );
 
 // Provider will make the redux store available for the entire application

@@ -5,13 +5,15 @@ import userReducer from './User/user.reducer';
 import productsReducer from './Products/products.reducer'
 import cartReducer from "./Cart/cart.reducer"
 import ordersReducer from './Orders/orders.reducer'
+import wishlistReducer from './Wishlist/wishlist.reducer'
 
 
 export const rootReducer =  combineReducers({
     user:userReducer ,
     productsData : productsReducer,
     cartData : cartReducer,
-    ordersData: ordersReducer
+    ordersData: ordersReducer,
+    wishlistData: wishlistReducer
 });
 
 const configStorage ={
@@ -20,4 +22,10 @@ const configStorage ={
     whitelist : ['cartData']
 };
 
-export default persistReducer(configStorage,rootReducer);
+const configStorageWishlist = {
+    key:'rootwishlist',
+    storage,
+    whitelist:['wishlistData']
+}
+
+export default persistReducer(configStorage,rootReducer, configStorageWishlist);

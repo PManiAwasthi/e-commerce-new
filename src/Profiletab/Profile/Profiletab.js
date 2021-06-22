@@ -126,13 +126,7 @@ function Profiletab(props) {
                                    <FormControlLabel value="other" control={<Radio/>} label="Others"/>
                                </RadioGroup>
                            </FormControl>
-                           <FormControl>
-                               <FormLabel>Type of Account</FormLabel>
-                               <RadioGroup row name="accounttype" value={values?.accounttype} onChange={handleInputChange}>
-                                   <FormControlLabel value="seller" control={<Radio/>} label="Seller"/>
-                                   <FormControlLabel value="buyer" control={<Radio/>} label="Buyer"/>
-                               </RadioGroup>
-                           </FormControl>
+                           
                            
                        </Grid>
                        <div className="btninputs">

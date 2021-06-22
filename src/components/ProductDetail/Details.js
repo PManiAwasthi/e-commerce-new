@@ -3,6 +3,7 @@ import {useParams} from 'react-router-dom'
 import {useDispatch,useSelector} from 'react-redux'
 import {fetchProductStart,setProduct} from './../../Redux/Products/products.actions'
 import {addProduct }from "./../../Redux/Cart/cart.actions"
+import {addProductWishlist} from "./../../Redux/Wishlist/wishlist.actions"
 import './productDetail.scss'
 import {useHistory} from 'react-router-dom'
 import {firestore} from '../../firebase/util'
@@ -43,6 +44,12 @@ export default function Details() {
         history.push('/cart')
     }
 
+    const handleAddToWishlist =(product)=>{
+        if(!product) return
+        dispatch(addProductWishlist(product));
+        history.push('/wishlist')
+    }
+
 
 
     const handleMouseMove = e =>{
@@ -51,14 +58,14 @@ export default function Details() {
         const y = (e.pageY - top) / height * 100
         imgDiv.current.style.backgroundPosition = `${x}% ${y}%`
     }
-    const handleAddToWishlist = (product) => {
-        if(!product) return
-        firestore.collection("userinfo").doc(currentUser.userid).collection('wishlist').add({
-            ...product,
-            productID
-          })
+    // const handleAddToWishlist = (product) => {
+    //     if(!product) return
+    //     firestore.collection("userinfo").doc(currentUser.userid).collection('wishlist').add({
+    //         ...product,
+    //         productID
+    //       })
 
-    }
+    // }
 
 
     return (

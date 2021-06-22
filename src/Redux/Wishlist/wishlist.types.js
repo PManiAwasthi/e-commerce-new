@@ -1,0 +1,8 @@
+const wishlistTypes ={
+    ADD_TO_CART :'ADD_TO_WISHLIST',
+    REMOVE_CART_ITEM:'REMOVE_WISHLIST_ITEM',
+    REDUCE_CART_ITEM:'REDUCE_WISHLIST_ITEM',
+    CLEAR_CART: "CLEAR_CLEAR"
+}
+
+export default wishlistTypes;
