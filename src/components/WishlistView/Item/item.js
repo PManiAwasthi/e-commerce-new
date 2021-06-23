@@ -40,17 +40,7 @@ const ItemWishlist = (product )=>{
                     <td>
                         {productName}
                     </td>
-                    <td>
-                        <span  className="cartBtn cartidbtn" onClick ={()=> handleReduceWishlistItem(documentID)}>
-                           {`-`} 
-                        </span>
-                        <span>
-                        {quantity}
-                        </span>
-                        <span className="cartBtn cartidbtn" onClick={()=>handleAddProduct(product)}>
-                            {`+`}
-                        </span>
-                    </td>
+                    
                     <td>
                         ₹{productPrice}
                     </td>

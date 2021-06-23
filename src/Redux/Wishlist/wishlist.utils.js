@@ -19,7 +19,7 @@ export const handleAddToWishlist = ({
         wishlistItem.documentID == nextWishlistItem.documentID
           ? {
             ...wishlistItem,
-            quantity: wishlistItem.quantity + quantityIncrement
+            // quantity: wishlistItem.quantity + quantityIncrement
           } : wishlistItem
       );
     }

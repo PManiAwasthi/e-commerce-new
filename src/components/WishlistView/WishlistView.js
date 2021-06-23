@@ -40,9 +40,6 @@ const WishlistView =({}) => {
                                            Description
                                         </th>
                                         <th>
-                                            Quantity
-                                        </th>
-                                        <th>
                                             Price
                                         </th>
                                         <th>

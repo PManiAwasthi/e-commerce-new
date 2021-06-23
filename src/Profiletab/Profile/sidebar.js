@@ -8,9 +8,16 @@ function Sidebar() {
                 e.preventDefault();
                 history.push("/");
         }
-        const gotoOrders = e => {
+        
+
+        const goToWishlist = e => {
                 e.preventDefault();
                 history.push("/wishlist");
+        }
+
+        const goToProduct = e => {
+                e.preventDefault();
+                history.push("/product");
         }
         
     return (
@@ -38,13 +45,13 @@ function Sidebar() {
                             <div className="elementarrow">&#62;</div>
                     </div>
                     <div className="sidebarelementsoptions">
-                    <div className="elementheading" onClick={gotoOrders}>
+                    <div className="elementheading" onClick={goToWishlist}>
                     <span>Wishlist</span>
                             </div>
                             <div className="elementarrow">&#62;</div>
                     </div>
                     <div className="sidebarelementsoptions">
-                    <div className="elementheading">
+                    <div className="elementheading" onClick={goToProduct}>
                     <span>Products</span>
                             </div>
                             <div className="elementarrow">&#62;</div>
