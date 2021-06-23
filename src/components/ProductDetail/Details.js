@@ -47,6 +47,10 @@ export default function Details() {
     const handleAddToWishlist =(product)=>{
         if(!product) return
         dispatch(addProductWishlist(product));
+        if(!product) return
+        firestore.collection("userinfo").doc(currentUser.userid).collection('wishlist').doc(productID).set({
+            ...product
+          })
         history.push('/wishlist')
     }
 
@@ -58,14 +62,7 @@ export default function Details() {
         const y = (e.pageY - top) / height * 100
         imgDiv.current.style.backgroundPosition = `${x}% ${y}%`
     }
-    // const handleAddToWishlist = (product) => {
-    //     if(!product) return
-    //     firestore.collection("userinfo").doc(currentUser.userid).collection('wishlist').add({
-    //         ...product,
-    //         productID
-    //       })
 
-    // }
 
 
     return (

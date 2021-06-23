@@ -2,7 +2,7 @@ import wishlistTypes from './wishlist.types'
 
 
 export const addProductWishlist = (nextWishlistItem) =>({
-    type: wishlistTypes.ADD_TO_CART,
+    type: wishlistTypes.ADD_TO_WISHLIST,
     payload: nextWishlistItem
 });
 
